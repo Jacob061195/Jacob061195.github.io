@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Sunga Baruti — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-name">Jacob Sunga Baruti</div>
+    <div class="nav-links">
+      <a href="#about"    data-i18n="nav_about">À propos</a>
+      <a href="#project"  data-i18n="nav_project">Projet</a>
+      <a href="#skills"   data-i18n="nav_skills">Compétences</a>
+      <a href="#contact"  data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="lang-switcher">
+      <button onclick="setLang('fr')" id="btn-fr">FR</button>
+      <button onclick="setLang('es')" id="btn-es">ES</button>
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-avatar">JSB</div>
+      <h1>Jacob Sunga Baruti</h1>
+      <p class="hero-title" data-i18n="hero_title">
+        Étudiant en Master 2 — Ingénierie Informatique &amp; Vision par Ordinateur
+      </p>
+      <p class="hero-institution">
+        Centro de Investigación en Computación (CIC) — IPN, México
+      </p>
+      <div class="hero-tags">
+        <span>Computer Vision</span>
+        <span>Deep Learning</span>
+        <span>UAV / Drones</span>
+        <span>YOLO</span>
+        <span>Python</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/Jacob061195" target="_blank" class="btn-primary">GitHub</a>
+        <a href="#contact" class="btn-secondary" data-i18n="hero_contact_btn">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 data-i18n="about_title">À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about_p1">
+            Étudiant en Master 2 en Ingénierie Informatique et Vision par Ordinateur au
+            Centro de Investigación en Computación de l'IPN (Instituto Politécnico Nacional) au Mexique.
+          </p>
+          <p data-i18n="about_p2">
+            Mes recherches portent sur l'intelligence artificielle appliquée aux systèmes de surveillance
+            autonomes par drone, avec un focus sur la détection multi-classe en temps réel
+            (feu, fumée, personnes) dans des environnements de catastrophe.
+          </p>
+          <p data-i18n="about_p3">
+            Passionné par le lien entre vision par ordinateur et applications critiques à fort impact social.
+          </p>
+        </div>
+        <div class="about-info">
+          <div class="info-item">
+            <span class="info-label" data-i18n="info_institution">Institution</span>
+            <span>CIC-IPN, México</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label" data-i18n="info_level">Niveau</span>
+            <span data-i18n="info_level_val">Master 2</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label" data-i18n="info_domain">Domaine</span>
+            <span data-i18n="info_domain_val">Ingénierie Informatique &amp; Vision par Ordinateur</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <span><a href="mailto:jsungab2024@cic.ipn.mx">jsungab2024@cic.ipn.mx</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project">
+    <div class="container">
+      <h2 data-i18n="project_title">Projet principal</h2>
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <h3>SASVD</h3>
+            <p class="project-subtitle" data-i18n="project_subtitle">
+              Sistema Autónomo de Seguimiento Visual con Drones para Operaciones de Rescate en Caso de Incendio
+            </p>
+          </div>
+          <span class="project-badge" data-i18n="project_badge">Mémoire de Master</span>
+        </div>
+        <p class="project-desc" data-i18n="project_desc">
+          Système autonome embarqué sur drone UAV pour la détection en temps réel de feux,
+          de fumée et de personnes en zones de catastrophe naturelle. Basé sur YOLOv11,
+          le système est entraîné sur un dataset fusionné de plus de 30 000 images
+          annotées issues de 4 sources complémentaires.
+        </p>
+        <div class="project-stats">
+          <div class="stat">
+            <span class="stat-val">30 702</span>
+            <span class="stat-label" data-i18n="stat_images">Images</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">3</span>
+            <span class="stat-label" data-i18n="stat_classes">Classes</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">80 K+</span>
+            <span class="stat-label" data-i18n="stat_annotations">Annotations</span>
+          </div>
+          <div class="stat">
+            <span class="stat-val">YOLOv11</span>
+            <span class="stat-label" data-i18n="stat_model">Modèle</span>
+          </div>
+        </div>
+        <div class="project-tech">
+          <span>Python</span><span>YOLOv11</span><span>Roboflow</span>
+          <span>PyTorch</span><span>UAV / Drone</span><span>Computer Vision</span>
+        </div>
+        <a href="https://github.com/Jacob061195/simulation_tesis_sasvd" target="_blank" class="btn-primary" data-i18n="project_btn">
+          Voir sur GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 data-i18n="skills_title">Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4 data-i18n="skill_ai">IA &amp; Vision par Ordinateur</h4>
+          <div class="skill-list">
+            <div class="skill-item"><span>YOLOv8 / YOLOv11</span><div class="bar"><div style="width:90%"></div></div></div>
+            <div class="skill-item"><span>PyTorch</span><div class="bar"><div style="width:75%"></div></div></div>
+            <div class="skill-item"><span>OpenCV</span><div class="bar"><div style="width:80%"></div></div></div>
+            <div class="skill-item"><span>Object Detection</span><div class="bar"><div style="width:85%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skill_data">Data &amp; Outils</h4>
+          <div class="skill-list">
+            <div class="skill-item"><span>Python</span><div class="bar"><div style="width:90%"></div></div></div>
+            <div class="skill-item"><span>Roboflow</span><div class="bar"><div style="width:85%"></div></div></div>
+            <div class="skill-item"><span>NumPy / Pandas</span><div class="bar"><div style="width:75%"></div></div></div>
+            <div class="skill-item"><span>Git / GitHub</span><div class="bar"><div style="width:70%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skill_sys">Systèmes</h4>
+          <div class="skill-list">
+            <div class="skill-item"><span>Linux / Ubuntu</span><div class="bar"><div style="width:80%"></div></div></div>
+            <div class="skill-item"><span>UAV / Drones</span><div class="bar"><div style="width:75%"></div></div></div>
+            <div class="skill-item"><span>Embedded AI</span><div class="bar"><div style="width:65%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 data-i18n="skill_lang">Langues</h4>
+          <div class="skill-list">
+            <div class="skill-item"><span data-i18n="lang_fr">Français</span><div class="bar"><div style="width:95%"></div></div></div>
+            <div class="skill-item"><span data-i18n="lang_es">Espagnol</span><div class="bar"><div style="width:90%"></div></div></div>
+            <div class="skill-item"><span data-i18n="lang_en">Anglais</span><div class="bar"><div style="width:70%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 data-i18n="contact_title">Contact</h2>
+      <p class="contact-sub" data-i18n="contact_sub">N'hésitez pas à me contacter pour toute collaboration ou question.</p>
+      <div class="contact-cards">
+        <a href="mailto:jsungab2024@cic.ipn.mx" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <span>jsungab2024@cic.ipn.mx</span>
+        </a>
+        <a href="https://github.com/Jacob061195" target="_blank" class="contact-card">
+          <div class="contact-icon">⌥</div>
+          <span>github.com/Jacob061195</span>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon">🎓</div>
+          <span>CIC-IPN, Ciudad de México</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Jacob Sunga Baruti — CIC-IPN México</p>
+  </footer>
+
+  <script src="i18n.js"></script>
+</body>
+</html>
